@@ -10,7 +10,7 @@ class SimpleController extends Controller {
   /**
    * Denna metod returnerar bara texten "Min controller returnerar grejer".
    */
-	public function index() {
+  public function index() {
     return 'Min controller returnerar grejer';
   }
 
