@@ -18,3 +18,10 @@
 @section('body')
   This page has been extended from master. Awesome!
 @endsection
+
+<!--
+  Blade loopar igenom en array, och skriver ut rad för rad i den.
+-->
+@foreach ($array as $data)
+  {{ data }}
+@endforeach

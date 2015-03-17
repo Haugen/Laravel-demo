@@ -40,6 +40,18 @@ Route::get('/view', function() {
 });
 
 /**
+ * Här skickar vi med en array med 4 siffror i. Dessa blir sedan tillgängliga i vyn, under
+ * namnet "data".
+ */
+Route::get('/view-med-data', function() {
+  $array = [
+    1, 2, 3, 4
+  ];
+
+  return view('my-view', ['data' => $array]);
+});
+
+/**
  * Vi kan använda oss utav argument på samma sätt som ovan, och skicka dem vidare till
  * vyn på följande sätt.
  */
